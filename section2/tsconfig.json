@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "outDir": "dist",
+        "strict": true,
+        // "strictNullChecks": false, //엄격한 null 검사 설정
+        //null타입이 아닌 변수에 null값을 넣어주는 걸 허용할지 보는 것
+        //'strict'는 'strictNullChecks'의 상위옵셥이다.
+        //'strict'가 true일 경우에만 'strictNullChecks'의 값을 줄 수 있다??
+        "moduleDetection": "force",
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": ["src"]
+}

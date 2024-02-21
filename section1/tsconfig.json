@@ -1,0 +1,15 @@
+{
+  //ts를 컴파일해서 만들어지는 js파일 코드의 버전을 선택하는 코드
+  "compilerOptions": {
+    "target": "ESNext", // 'ESNext'=> js 최신버전
+    "module": "ESNext", //ts컴파일링에 모듈옵션 설정
+    "outDir": "dist", //컴파일 결과로 js파일이 어디에 생성될지 설정
+    "strict": false,//엄격하게 타입을 검사하도록 설정
+    "moduleDetection": "force",// ts는 모든 파일을 전역모듈로 간주하기 같은 변수명을 쓸 수 없다. 
+    //이 설정시 각 파일에 export나 import를 자동으로 설정해주어 전역이 아닌 개별 모듈로 만들어주어 같은 변수명을 쓸수 있게 만들어준다.
+  },
+  "ts-node": { //ts-node를 잘 실행시키게 하는 설정
+    "esm": true
+  },
+  "include": ["src"] //src안에 있는 파일을 모두 컴파일해라
+}
